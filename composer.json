@@ -1,0 +1,36 @@
+{
+    "name":        "hashnz/hawk-server-bundle",
+    "type":        "symfony-bundle",
+    "description": "Hawk authentication bundle for Symfony",
+    "keywords":    ["hawk", "authentication", "bundle"],
+    "homepage":    "https://github.com/hashnz/HawkServerBundle",
+    "license":     "MIT",
+
+    "authors": [
+        {
+            "name": "hashnz"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.4",
+        "symfony/symfony": "~2.1",
+        "dflydev/hawk": "1.0.*@dev"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Hashnz\\HawkServerBundle\\": "src"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Hashnz\\HawkServerBundle\\Tests\\": "tests"
+        }
+    }
+}
